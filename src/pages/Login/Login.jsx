@@ -9,7 +9,7 @@ import "./Login.css"
 
 export default function Login() {
   const [inputValue, setInputValue] = useState(({email: "", password: ""}));
-  const [cookies] = useCookies();
+  const [cookies, setCookie] = useCookies();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -48,6 +48,11 @@ export default function Login() {
       );
       const { success, message } = data;
       if(success) {
+        setCookie("token", message.token, {
+          httpOnly: false,
+          sameSite: "none",
+          secure: true
+        })
         handleSuccess(message);
         setTimeout(() => {
           navigate("/");
