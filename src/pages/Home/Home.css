@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: clamp(30em, 50vw, 50em);
+}
+
+h1 {
+  color: var(--primary-colour);
+  cursor: default;
+}
+
+.auth-btn {
+  background: none;
+  color: var(--primary-colour);
+  border: 1px solid var(--primary-colour);
+  border-radius: .35em;
+  margin-left: auto;
+  height: 2.25em;
+  cursor: pointer;
+  transition: ease 100ms;
+}
+
+.auth-btn:hover {
+  position: relative;
+  top: -3px;
+  filter: drop-shadow(0 0 .2rem var(--primary-colour));
+}
+
+@media(max-width: 600px) {
+  .header {
+    width: clamp(10em, 75vw, 40em);
+  }
+}

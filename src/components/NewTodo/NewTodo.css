@@ -1,0 +1,33 @@
+#input__new-todo {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: clamp(30em, 50vw, 50em);
+  height: 3em;
+  border-radius: .35em;
+  border: 1px solid var(--primary-colour);
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  transition: ease 100ms;
+}
+
+#input__new-todo:focus-visible {
+  outline: none;
+}
+
+#input__new-todo:hover {
+  position: relative;
+  top: -3px;
+  filter: drop-shadow(0 0 .3rem var(--primary-colour));
+}
+
+#input__new-todo:focus {
+  position: relative;
+  top: -3px;
+  filter: drop-shadow(0 0 .3rem var(--primary-colour));
+}
+
+@media(max-width: 600px) {
+  #input__new-todo {
+    width: clamp(10em, 75vw, 40em);
+  }
+}

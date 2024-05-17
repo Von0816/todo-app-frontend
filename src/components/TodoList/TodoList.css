@@ -1,0 +1,13 @@
+#todolist {
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  width: clamp(30em, 50vw, 50em);
+}
+
+@media(max-width: 600px) {
+  #todolist {
+    width: clamp(10em, 75vw, 40em);
+  }
+}

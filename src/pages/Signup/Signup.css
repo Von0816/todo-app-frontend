@@ -1,0 +1,77 @@
+.flex-column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+#form__signup {
+  width: 20em;
+  height: 15em;
+  padding: 2em;
+  border-radius: 1em;
+  gap: 1em;
+  align-self: center;
+  background-color: var(--primary-white);
+}
+
+.form__item {
+  gap: .5em;
+}
+
+.input__label {
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.form__input {
+  height: 2em;
+  border: 1px solid var(--primary-black);
+  border-radius: .2em;
+  padding: .2em .5em;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.form__input:focus-visible {
+  outline: none;
+}
+
+#button__signup {
+  cursor: pointer;
+  align-self: center;
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: .35em;
+  background-color: #41B06E;
+  font-size: 1em;
+  font-weight: 500;
+  transition: ease-in 100ms;
+}
+
+#button__signup:hover {
+  position: relative;
+  top: -3px;
+  background-color: #2C7865;
+  filter: drop-shadow(0 0 .3rem #41B06E);
+}
+
+#anchor__login {
+  color: var(--primary-colour);
+  font-size: .8em;
+  font-style: italic;
+}
+
+@media(max-width: 600px) {
+  #form__signup {
+    width: clamp(10em, 75vw, 40em);
+  }
+}

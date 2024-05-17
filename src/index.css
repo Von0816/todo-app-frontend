@@ -1,0 +1,22 @@
+:root {
+  --primary-colour: #DA0C81;
+  --primary-black: #0C0C0C;
+  --primary-white: #EEEEEE;
+  --pure-black: #000;
+  --pure-white: #FFF;
+  --shadow: rgba(0, 0, 0, 25%);
+  --error-primary: #CD1818;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-black);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
